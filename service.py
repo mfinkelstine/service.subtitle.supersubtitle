@@ -23,12 +23,12 @@ import codecs, glob, os, shutil, sys, time, urllib
 import xbmc , xbmcaddon, xbmcgui, xbmcplugin , xbmcvfs
 
 
-__addon__ = xbmcaddon.Addon()
-__author__ = __addon__.getAddonInfo('author')
-__scriptid__ = __addon__.getAddonInfo('id')
-__scriptname__ = __addon__.getAddonInfo('name')
-__version__ = __addon__.getAddonInfo('version')
-__language__ = __addon__.getLocalizedString
+__addon__       = xbmcaddon.Addon()
+__author__      = __addon__.getAddonInfo('author')
+__scriptid__    = __addon__.getAddonInfo('id')
+__scriptname__  = __addon__.getAddonInfo('name')
+__version__     = __addon__.getAddonInfo('version')
+__language__    = __addon__.getLocalizedString
 
 __cwd__ = unicode(xbmc.translatePath(__addon__.getAddonInfo('path')), 'utf-8')
 __profile__ = unicode(xbmc.translatePath(__addon__.getAddonInfo('profile')), 'utf-8')
