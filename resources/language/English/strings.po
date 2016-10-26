@@ -14,114 +14,127 @@ msgstr ""
 
 #English
 
-msgctxt "#32001"
-msgid "Error searching for subtitles"
-msgstr ""
-
-msgctxt "#32002"
-msgid "Cache settings"
-msgstr ""
-
-msgctxt "#32003"
-msgid "Clear addon`s local cache"
-msgstr ""
-
-msgctxt "#32004"
-msgid "Addon`s local cache was cleared successfully"
-msgstr ""
-
-msgctxt "#32005"
-msgid "Email"
-msgstr ""
-
-msgctxt "#32006"
-msgid "Password"
-msgstr ""
-
 msgctxt "#32007"
-msgid "Login Details"
+msgid "Select Language"
 msgstr ""
 
 msgctxt "#32008"
 msgid "Check login details"
 msgstr ""
 
-msgctxt "#32009"
-msgid "Wrong email or password"
-msgstr ""
-
-msgctxt "#32010"
-msgid "Logged in successfully"
-msgstr ""
-
-############################## left header ids 33000
-
-msgctxt "#33000"
-msgid "Login Details"
-msgstr ""
 
 msgctxt "#33001"
-msgid "Subtitle Providers"
+msgid "Login Detailes"
 msgstr ""
 
-msgctxt "#33101"
-msgid "Debugging"
+msgctxt "#32002"
+msgid "Global Site Authentication"
 msgstr ""
 
-############################## Login Details header 
+msgctxt "#33003"
+msgid " - Username"
+msgstr ""
+
+msgctxt "#33004"
+msgid " - Password"
+msgstr ""
+
+msgctxt "#33005"
+msgid "Subtitle Site Authentication"
+msgstr ""
+
+msgctxt "#33006"
+msgid "Torec Site"
+msgstr ""
+
+msgctxt "#33007"
+msgid ""
+msgstr ""
+
+msgctxt "#33008"
+msgid ""
+msgstr ""
+
+msgctxt "#33009"
+msgid "BSplayer site"
+msgstr ""
+
 msgctxt "#33010"
-msgid "Global Login Information"
+msgid ""
 msgstr ""
 
 msgctxt "#33011"
-msgid "   User/email"
+msgid ""
 msgstr ""
 
 msgctxt "#33012"
-msgid "   Password"
+msgid "SUBCenter Site"
 msgstr ""
 
 msgctxt "#33013"
-msgid "Select Specific Subtitle Provider"
+msgid ""
 msgstr ""
 
-########## 
+msgctxt "#33014"
+msgid ""
+msgstr ""
+
+msgctxt "#33015"
+msgid ""
+msgstr ""
+
+msgctxt "#33016"
+msgid "OpenSubtitle Site"
+msgstr ""
+
+msgctxt "#33017"
+msgid ""
+msgstr ""
+
+msgctxt "#33018"
+msgid ""
+msgstr ""
+
+msgctxt "#33019"
+msgid "Ktuvit site"
+msgstr ""
+
 msgctxt "#33020"
-msgcid  "Subtitles Provider Options"
-msgstr  ""
+msgid ""
+msgstr ""
 
 msgctxt "#33021"
-msgcid  "Global Search for all Super Subs Providers"
-msgstr  ""
-
-msgctxt "#33022"
-msgcid "Enable Specific Providers"
+msgid ""
 msgstr ""
 
-############# Subtitle providers
-msgctxt "#33501"
-msgid   "Torec Site"
-msgstr  "אתר טורק"
+msgctxt "#34001"
+msgid "Subtitle Providers"
+msgstr ""
 
-msgctxt "#33502"
-msgid   "OpenSubtitles Site"
-msgstr  ""
+msgctxt "#34002"
+msgid "Global Site Providers Enable"
+msgstr ""
 
-msgctxt "#33503"
-msgid   "Subscenter Site"
-msgstr  ""
+msgctxt "#34003"
+msgid "Specific Site Enable"
+msgstr ""
 
-msgctxt "#33504"
-msgid   "Subtitle Site"
-msgstr  "אתר טורק"
+msgctxt "#35001"
+msgid "Debug Info"
+msgstr ""
 
-############# torec login/password
-msgctxt "#33401"
-msgid   "Torec Username"
-msgstr  "טורק שם משתמש"
+msgctxt "#35002"
+msgid "DEBUG Enable"
+msgstr ""
 
-msgctxt "#33402"
-msgid   "Torec Password"
-msgstr  "טורק סיסמא"
+msgctxt "#35003"
+msgid "DEBUG Notification Optionsnable"
+msgstr ""
 
+msgctxt "#35004"
+msgid " Non Fatal Error Notifications"
+msgstr ""
 
+msgctxt "#35005"
+msgid " Mute Fatal Error Notifications"
+msgstr ""

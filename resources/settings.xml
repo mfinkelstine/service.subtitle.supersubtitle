@@ -1,34 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <category label="33000">
-        <setting label="33010" id="globalSearchSProvider" type="bool"  default="true"/>
-        <setting label="33011" id="globalUsername" type="text" default="" visible="eq(-1,true)"/>
-        <setting label="33012" id="globalPassword" type="text" option="hidden"  default="" visible="eq(-2,true)"/>
-        
-        <setting label="33013" id="specificSearchSProvider" type="bool" default="false"/>
-        <setting label="33501" id="torec_site" type="bool" label="torec.net" visible="eq(-1,true)" />
-         <!--<setting label="33502" id="torec_site" type="bool" label="torec.net" visible="eq(-2,false)" />
-        <setting label="33503" id="torec_site" type="bool" label="torec.net" visible="eq(-3,false)" />
-        <setting label="33504" id="torec_site" type="bool" label="torec.net" visible="eq(-4,false)" />-->
-        <setting type="sep"/>
-        <setting label="32008" type="action"  action="RunScript(service.subtitles.subscenter, 1,action=login)" option="close"/>
-    </category>
-
     <category label="33001">
-        <setting label="33021" type="lsep"/>
-        <setting label="33021" id="globalSearchSProvider" type="bool"  default="true"/>
-        <setting label="33022" type="lsep" visible="eq(-1,false)" />
-        <setting id="torec" type="text" label="torec.net" visible="eq(-2,false)" lvalues="32001|32002|32003|32004"/>
-        <setting id="subscenter" type="text" label="subscenter    Base Url" default="http://www.subscenter.co.il" visible="eq(-3,false)"/>
-        <setting id="opensubtitles" type="text" label="opensubtitles    Base Url" default="http://www.opensubtitles.net" visible="eq(-4,false)"/>
-        <setting id="bsplayer" type="text" label="bsplayer    Base Url" default="http://www.bsplayer.com" visible="eq(-5,false)"/>
+        
+            <setting label="32002" id="globalSearchSProvider" type="bool"  default="true" enable="!eq(4,true)" />
+                <setting label="33003" id="globalUsername" type="text" default="" visible="eq(-1,true)" />
+                <setting label="33004" id="globalPassword" type="text" option="hidden"  default="" visible="eq(-2,true)" />
+        
+        <setting type="sep" />  
+            <setting label="33005" id="specificSearchSProvider" type="bool" default="false" enable="!eq(-4,true)" />
+            
+            <setting     label="33006" id="torecUrl"  type="bool"  visible="!eq(-1,false)"  default="false" enable="!eq( -1 , false)" /> 
+                <setting label="33003" id="torecUser" type="text"  visible="!eq(-1,false)|eq(-2,false)"  default="false" />
+                <setting label="33004" id="torecPass" type="text"  visible="!eq(-2,false)"  default="false" enable="!eq( -2, false) | !eq( -4, false)" option="hidden" />
+            
+            <setting label="33009" id="bsplayerUrl" type="bool" default="false"  visible="!eq(-4,false)" />
+                <setting label="33003" id="bsplayerUser" type="text" visible="!eq(-1,false)" enable="!eq( -1, false) + !eq( -4, false)" />
+                <setting label="33004" id="bsplayerPass" type="text" visible="!eq(-2,false)" option="hidden"/>
+            
+            <setting label="33012" id="subcenterUrl" type="bool" default="false"  visible="!eq(-7,false)" />
+                <setting label="33003" id="subcUser" type="text" visible="!eq(-1,false)" />
+                <setting label="33004" id="subcPass" type="text" visible="!eq(-2,false)" option="hidden"/>
+            
+            <setting label="33016" id="opensubUrl" type="bool" default="false" visible="!eq(-10,false)" />
+                <setting label="33003" id="opensUser" type="text" visible="!eq(-1,false)" />
+                <setting label="33004" id="opensPass" type="text" visible="!eq(-2,false)" option="hidden" />
+            
+            <setting label="33019" id="ktuvitUrl" type="bool" default="false" visible="!eq(-13,false)" />
+                <setting label="33003" id="ktuvitUser" type="text" visible="!eq(-1,false)" />
+                <setting label="33004" id="ktuvitPass" type="text" visible="!eq(-2,false)" option="hidden" />
+        
+        <setting type="sep"/>
+            <setting label="32007" type="select" id="language" values="cs|da|de|el|en|es|fi|fr|he|hr|hu|it|ja|ko|nl|no|pl|pt|ru|sl|sv|tr|zh" sort="yes" default="he" />
+        
+        <setting type="sep"/>
+            <setting label="32008" type="action"  action="RunScript(service.subtitles.supersubs, 1, action=login)" option="close" />
 
     </category>
-    <category label="33101">
-        <setting type="lsep" label="Debugging" />
-        <setting id="debug" type="bool" label="Debugging" default="false"/>
-        <setting type="lsep" label="Notification Options" />
-        <setting id="error_notify" type="bool" label="Non Fatal Error Notifications" default="false"/>
-        <setting id="mute_notifications" type="bool" label="Mute Notifications" default="true"/>
+    
+
+    <category label="34001">
+        <setting label="34002" id="globalSearchSProvider"   type="bool" default="true"  enable="!eq(1,true)" />
+        <setting label="34003" id="specificSearchSProvider" type="bool" default="false" enable="!eq(-1,true)"/>
+        <setting label="33006" id="torecUrl"                type="bool" default="false" visible="!eq(-1,false)" />
+        <!-- <setting label="subscenter    Base Url" id="subscenter" type="text"  default="http://www.subscenter.co.il" visible="eq(-3,false)"/>
+        <setting label="opensubtitles    Base Url" id="opensubtitles" type="text"  default="http://www.opensubtitles.net" visible="eq(-4,false)"/>
+        <setting label="bsplayer    Base Url" id="bsplayer" type="text"  default="http://www.bsplayer.com" visible="eq(-5,false)"/> -->
+
     </category>
+    <category label="35001">
+        <setting label="35002" id="debug" type="bool"  default="false"/>
+        <setting label="35003" type="lsep" />
+        <setting label="35004" id="error_notify" type="bool" default="false"/>
+        <setting label="35005" id="mute_notifications" type="bool" default="true"/>
+    </category>
+
 </settings>
