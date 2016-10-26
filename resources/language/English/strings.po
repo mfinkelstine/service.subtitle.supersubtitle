@@ -64,7 +64,7 @@ msgctxt "#33001"
 msgid "Subtitle Providers"
 msgstr ""
 
-msgctxt "#33002"
+msgctxt "#33101"
 msgid "Debugging"
 msgstr ""
 
@@ -98,5 +98,30 @@ msgctxt "#33022"
 msgcid "Enable Specific Providers"
 msgstr ""
 
+############# Subtitle providers
+msgctxt "#33501"
+msgid   "Torec Site"
+msgstr  "אתר טורק"
+
+msgctxt "#33502"
+msgid   "OpenSubtitles Site"
+msgstr  ""
+
+msgctxt "#33503"
+msgid   "Subscenter Site"
+msgstr  ""
+
+msgctxt "#33504"
+msgid   "Subtitle Site"
+msgstr  "אתר טורק"
+
+############# torec login/password
+msgctxt "#33401"
+msgid   "Torec Username"
+msgstr  "טורק שם משתמש"
+
+msgctxt "#33402"
+msgid   "Torec Password"
+msgstr  "טורק סיסמא"
 
 

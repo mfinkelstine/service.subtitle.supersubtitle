@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <!--<category label="32001">
-        <setting label="32011" type="text"   id="username" default=""/>
-        <setting label="32012" type="text"   id="password" option="hidden"  enable="!eq(-1,)" default=""/>
-        
-        <setting type="sep"/>
-        <setting type="action" label="32010" action="RunScript(service.subtitles.supersub, 1,action=login)" option="close"/>
-    </category>-->
     <category label="33000">
         <setting label="33010" id="globalSearchSProvider" type="bool"  default="true"/>
         <setting label="33011" id="globalUsername" type="text" default="" visible="eq(-1,true)"/>
         <setting label="33012" id="globalPassword" type="text" option="hidden"  default="" visible="eq(-2,true)"/>
         
-        <setting label="33013" id="globalSearchSProvider" type="bool" default="false"/>
-        <setting id="torec" type="text" label="torec.net" visible="eq(-1,false)" lvalues="32001|32002|32003|32004"/>
+        <setting label="33013" id="specificSearchSProvider" type="bool" default="false"/>
+        <setting label="33501" id="torec_site" type="bool" label="torec.net" visible="eq(-1,true)" />
+         <!--<setting label="33502" id="torec_site" type="bool" label="torec.net" visible="eq(-2,false)" />
+        <setting label="33503" id="torec_site" type="bool" label="torec.net" visible="eq(-3,false)" />
+        <setting label="33504" id="torec_site" type="bool" label="torec.net" visible="eq(-4,false)" />-->
         <setting type="sep"/>
         <setting label="32008" type="action"  action="RunScript(service.subtitles.subscenter, 1,action=login)" option="close"/>
     </category>
@@ -28,7 +24,7 @@
         <setting id="bsplayer" type="text" label="bsplayer    Base Url" default="http://www.bsplayer.com" visible="eq(-5,false)"/>
 
     </category>
-    <category label="33002">
+    <category label="33101">
         <setting type="lsep" label="Debugging" />
         <setting id="debug" type="bool" label="Debugging" default="false"/>
         <setting type="lsep" label="Notification Options" />
