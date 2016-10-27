@@ -35,4 +35,10 @@ __profile__ = unicode(xbmc.translatePath(__addon__.getAddonInfo('profile')), 'ut
 __resource__ = unicode(xbmc.translatePath(os.path.join(__cwd__, 'resources', 'lib')), 'utf-8')
 __temp__ = unicode(xbmc.translatePath(os.path.join(__profile__, 'temp')), 'utf-8')
 
-sys.path.append(__resource__)
+def log(module, msg):
+    xbmc.log((u"### [%s] - %s" % (module, msg)).encode('utf-8'), level=xbmc.LOGDEBUG)
+
+#sys.path.append(__resource__)
+log("DEBUG",__addon__)
+log("DEBUG",__addon__.getSetting("globalSearchSProvider"))
+#print "addon name %s globalSearchSProvider %s" %(__addon__,xbmc.log(__addon__.getSetting("globalSearchSProvider")))

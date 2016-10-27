@@ -32,7 +32,7 @@
             <setting label="32007" type="select" id="language" values="cs|da|de|el|en|es|fi|fr|he|hr|hu|it|ja|ko|nl|no|pl|pt|ru|sl|sv|tr|zh" sort="yes" default="he" />
         
         <setting type="sep"/>
-            <setting label="32008" type="action"  action="RunScript(service.subtitles.supersubs, 1, action=login)" option="close" />
+            <setting label="32008" type="action"  action="RunScript(service.subtitles.supersubs, 1, action=checkLogins)" option="close" />
 
     </category>
     
