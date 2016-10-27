@@ -14,6 +14,38 @@ msgstr ""
 
 #English
 
+msgctxt "#32010"
+msgid "     Torec Username"
+msgstr ""
+
+msgctxt "#32011"
+msgid "     Torec Password"
+msgstr ""
+
+msgctxt "#32012"
+msgid "OpenSubtitle Username"
+msgstr ""
+
+msgctxt "#32013"
+msgid "OpenSubtitle Password"
+msgstr ""
+
+msgctxt "#32014"
+msgid "BSplayer Username"
+msgstr ""
+
+msgctxt "#32015"
+msgid "BSplayer Password"
+msgstr ""
+
+msgctxt "#32016"
+msgid "SUBCenter Username"
+msgstr ""
+
+msgctxt "#32017"
+msgid "SUBCenter Password"
+msgstr ""
+
 msgctxt "#32007"
 msgid "Select Language"
 msgstr ""
@@ -44,7 +76,7 @@ msgid "Subtitle Site Authentication"
 msgstr ""
 
 msgctxt "#33006"
-msgid "Torec Site"
+msgid " Torec Site"
 msgstr ""
 
 msgctxt "#33007"
