@@ -14,7 +14,15 @@ msgstr ""
 
 #English
 
-msgctxt "#32010"
+msgctxt "#34007"
+msgid "Select Language"
+msgstr ""
+
+msgctxt "#34008"
+msgid "Check login details"
+msgstr ""
+
+msgctxt "#34010"
 msgid "     Torec Username"
 msgstr ""
 
@@ -46,20 +54,16 @@ msgctxt "#32017"
 msgid "SUBCenter Password"
 msgstr ""
 
-msgctxt "#32007"
-msgid "Select Language"
-msgstr ""
-
-msgctxt "#32008"
-msgid "Check login details"
-msgstr ""
 
 
-msgctxt "#33001"
+
+
+
+msgctxt "#34001"
 msgid "Login Detailes"
 msgstr ""
 
-msgctxt "#32002"
+msgctxt "#34002"
 msgid "Global Site Authentication"
 msgstr ""
 

@@ -19,8 +19,16 @@
 '''
 
 
-import codecs, glob, os, shutil, sys, time, urllib
-import xbmc , xbmcaddon, xbmcgui, xbmcplugin , xbmcvfs
+import os
+import sys
+import urllib
+import xbmc
+import xbmcvfs
+import xbmcaddon
+import xbmcgui
+import xbmcplugin
+from requests import post
+
 
 
 __addon__       = xbmcaddon.Addon()
@@ -35,10 +43,45 @@ __profile__ = unicode(xbmc.translatePath(__addon__.getAddonInfo('profile')), 'ut
 __resource__ = unicode(xbmc.translatePath(os.path.join(__cwd__, 'resources', 'lib')), 'utf-8')
 __temp__ = unicode(xbmc.translatePath(os.path.join(__profile__, 'temp')), 'utf-8')
 
-def log(module, msg):
-    xbmc.log((u"### [%s] - %s" % (module, msg)).encode('utf-8'), level=xbmc.LOGDEBUG)
+sys.path.append(__resource__)
 
-#sys.path.append(__resource__)
-log("DEBUG",__addon__)
-log("DEBUG",__addon__.getSetting("globalSearchSProvider"))
-#print "addon name %s globalSearchSProvider %s" %(__addon__,xbmc.log(__addon__.getSetting("globalSearchSProvider")))
+from superSubsUtil import superSubsHelper, log 
+
+def get_params(string=""):
+    param = []
+    if string == "":
+        paramstring = sys.argv[2]
+    else:
+        paramstring = string
+
+    if len(paramstring) >= 2:
+        params = paramstring
+        cleanedparams = params.replace('?', '')
+        if (params[len(params) - 1] == '/'):
+            params = params[0:len(params) - 2]
+        pairsofparams = cleanedparams.split('&')
+        param = {}
+        
+        for i in range(len(pairsofparams)):
+            splitparams = {}
+            splitparams = pairsofparams[i].split('=')
+            if (len(splitparams)) == 2:
+                param[splitparams[0]] = splitparams[1]
+
+    return param
+
+
+params = get_params()
+
+if params['action'] in ['search', 'manualsearch']:
+    log("Version: '%s'" % (__addon__,))
+    log("Addon: '%s'" % (__version__,))
+    log("params: '%s'" % (params,))
+
+elif params['action'] == 'checkLogins':
+    log("Version: '%s'" % (__addon__,))
+    log("Addon: '%s'" % (__version__,))
+    log("params: '%s'" % (params,))
+    superSub = superSubsHelper()
+    superSub.checklogin(True,True)
+    __addon__.openSettings()
